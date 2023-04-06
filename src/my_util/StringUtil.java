@@ -32,5 +32,61 @@ public class StringUtil {
         return fixed;
     }
 
+    /**
+     This method accept a String with multiple words and converted it to camelCase
+     */
+
+    public static String cameCase (String str){
+
+        String [] arr = str.split(" ");
+        String result = "";
+
+        for (String each:arr) {
+            result +=(each.charAt(0)+"").toUpperCase()+each.substring(1).toLowerCase();
+
+        }
+        return (result.charAt(0)+"").toLowerCase()+result.substring(1);
+
+    }
+
+    /**
+     *
+     * This method accept String and char
+     * And returns how many times that char exist in the String
+     */
+
+    public static int frequencyOfCharacter (String  str, char ch){
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch){
+                count++;
+            }
+        }return count;
+    }
+
+    /**
+     *
+     * This method accept String
+     * And return only unique characters as a String
+     */
+
+    public static String uniqueCharacters (String str){
+
+        String check = "";
+        String unique = "";
+
+        for (int i = 0; i < str.length(); i++) {
+
+            if (!check.contains(""+str.charAt(i))){
+                int count = StringUtil.frequencyOfCharacter(str,str.charAt(i));
+                check +=str.charAt(i);
+                if (count==1){
+                    unique+=str.charAt(i);
+                }
+
+            }
+        }return unique;
+    }
+
 
 }
