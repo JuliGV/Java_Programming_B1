@@ -108,4 +108,45 @@ public class ArrayUtil {
         return newArr;
 
     }
+
+    /**
+     * Accept int num and int arr and return new arr with new number at the begining
+     * @param num
+     * @param arr
+     * @return
+     */
+
+    public static int [] addEmementBegining (int num, int ... arr){
+        int [] newArr = new int[arr.length+1];
+        for (int i = 1; i < newArr.length; i++) {
+
+            newArr[i]= arr[i-1];/// why i-1 because we start assign in arr from 0 and newArr from 1 index, we get 0 index 0 ---->0
+
+        }
+        newArr[0]= num;///
+        return newArr;
+
+    }
+
+    /**
+     * Accept String word and String  arr and return new arr with new String arr  add new word at the begining
+     * @param num
+     * @param arr
+     * @return
+     */
+
+
+
+    public static String [] addEmementBegining (String  word, String  ... arr){
+
+        String  [] newArr = new String[arr.length+1];
+        for (int i = 1; i < newArr.length; i++) {
+
+            newArr[i]= arr[i-1];/// why i-1 because we start assign in arr from 0 and newArr from 1 index, we get 0 index 0 ---->0
+
+        }
+        newArr[0]= word;///
+        return newArr;
+
+    }
 }
