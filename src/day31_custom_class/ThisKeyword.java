@@ -2,10 +2,10 @@ package day31_custom_class;
 
 public class ThisKeyword {
     // this
-    int a = 100;
+    int a;
     public  ThisKeyword(int a){
-        a = 400;
-        this.a = a;
+       this.a = a;
+
 
     }
 }

@@ -13,6 +13,7 @@ public class Store {
         Food [] foodArr = {grape,apple,banana};//add object to array
         ArrayList<Food> foodList = new ArrayList<>();
         foodList.addAll(Arrays.asList(apple,banana,grape));
+
         for (int i = 0; i < foodList.size(); i++) {
 
             if (     (foodList.get(i).name.charAt(0)+"").equalsIgnoreCase("a")    ) {
