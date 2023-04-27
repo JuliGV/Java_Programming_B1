@@ -5,6 +5,7 @@ public class Login {
     private  String password;
 
     public void setUpUserName (String userName){
+
         this.userName = userName;
     }
     public void setPassword(String password){
@@ -14,6 +15,7 @@ public class Login {
     }
 
     public String getUserName(){
+
         return userName;
     }
 
