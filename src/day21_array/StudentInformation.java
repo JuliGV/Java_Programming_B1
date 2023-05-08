@@ -1,4 +1,4 @@
-package day_21_array;
+package day21_array;
 /*
         all String types
         0 -> id

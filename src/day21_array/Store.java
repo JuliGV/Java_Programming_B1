@@ -1,4 +1,4 @@
-package day_21_array;
+package day21_array;
 
 public class Store {
     public static void main(String[] args) {

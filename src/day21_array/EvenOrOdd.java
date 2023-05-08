@@ -1,4 +1,4 @@
-package day_21_array;
+package day21_array;
 /*
     Even and odd from array
     Write a program that can count the even and odd number from an array of integers

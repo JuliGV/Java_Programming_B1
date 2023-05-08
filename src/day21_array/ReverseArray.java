@@ -1,4 +1,4 @@
-package day_21_array;
+package day21_array;
 /*
     Reverse Array
     Write a program that will reverse the order of any given array
