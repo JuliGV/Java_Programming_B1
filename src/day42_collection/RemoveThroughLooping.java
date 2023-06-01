@@ -23,6 +23,7 @@ public class RemoveThroughLooping {
         while (it.hasNext()){
             if(it.next() < 5){
                 it.remove();
+
             }
         }
         System.out.println(list);// it helps as through iteration but we still using list
